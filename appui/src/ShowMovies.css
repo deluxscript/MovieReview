@@ -1,0 +1,9 @@
+table, th, td {
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding:3px;
+}
+
+.btn {
+    cursor: pointer;
+}
