@@ -1,9 +1,47 @@
 table, th, td {
-    border: 1px solid #ccc;
     margin: 0 auto;
     padding:3px;
 }
 
 .btn {
     cursor: pointer;
+    background: #FB8C00;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.cf {
+    border: 1px solid #D6D5D5;
+}
+
+.synopsis {
+    color: #D6D5D5;
+    padding: 0 15px;
+}
+
+.id {
+    color: #D6D5D5;
+}
+
+.casts {
+    color: #D6D5D5;
+}
+
+.title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.rating {
+    background: #EC6000;
+    border-radius: 50%;
+    color: #030202;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
 }

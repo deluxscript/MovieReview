@@ -29,7 +29,7 @@ class App extends Component {
                   id: 3,
                   name:'Damsel',
                   img:'https://resizing.flixster.com/cg4C8_Z_ByuEz3uTBb2hFh9EtDY=/300x300/v1.bjsxOTU5NTkyO2o7MTc4ODc7MTIwMDsyMjc1Ozg1Mw',
-                  synopsis:"Samuel Alabaster (Robert Pattinson), an affluent pioneer, ventures across the American Frontier to marry the love of his life, Penelope (Mia Wasikowska). As Samuel traverses the Wild West with a drunkard named Parson Henry (David Zellner) and a miniature horse called Butterscotch, their once-simple journey grows treacherous, blurring the lines between hero, villain and damsel. A loving reinvention of the western genre from the Zellner brothers (Kumiko, the Treasure Hunter), DAMSEL showcases their trademark unpredictability, off-kilter sense of humor, and unique brand of humanism.",
+                  synopsis:"Samuel Alabaster (Robert Pattinson), an affluent pioneer, ventures across the American Frontier to marry the love of his life, Penelope (Mia Wasikowska).",
                   casts:'Robert Pattinson, Mia Wasikowska, Robert Forster, David Zellner',
                   rating:0
                 },
@@ -45,8 +45,7 @@ class App extends Component {
                   id: 5,
                   name: 'Nancy',
                   img:'https://resizing.flixster.com/hIWHq7Sdbdn663J_BUii7BXZRis=/206x305/v1.bTsxMjczMDY0NDtqOzE3ODMyOzEyMDA7MjAyNTszMDAw',
-                  synopsis:"NANCY is a provocative psychological thriller about love, intimacy, and trust - and what happens when lies become truth. Craving connection with others, Nancy creates elaborate identities and hoaxes under pseudonyms on the internet. When she meets a couple whose daughter went missing thirty years ago, fact and fiction begin to blur in Nancy's mind, and she becomes increasingly convinced these strangers are her real parents. As their bond deepens, reasonable doubts give way to willful belief - and the power of emotion threatens to overcome all rationality.",
-                  casts:'Andrea Riseborough, J. Smith-Cameron, Ann Dowd, John Leguizamo',
+                  synopsis:"NANCY is a provocative psychological thriller about love, intimacy, and trust - and what happens when lies become truth. Craving connection with others, Nancy creates elaborate identities and hoaxes under pseudonyms on the internet.",
                   rating:0
                 },
                 {
@@ -61,7 +60,7 @@ class App extends Component {
                   id: 7,
                   name: 'Leave No Trace',
                   img:'https://resizing.flixster.com/01pR_mkvOVfUShZG2xbcJXqDGI0=/206x305/v1.bTsxMjcyMzc5MDtqOzE3ODMyOzEyMDA7NDA1MDs2MDAw',
-                  synopsis:"Will (Ben Foster) and his teenage daughter, Tom (Thomasin Harcourt McKenzie), have lived off the grid for years in the forests of Portland, Oregon. When their idyllic life is shattered, both are put into social services. After clashing with their new surroundings, Will and Tom set off on a harrowing journey back to their wild homeland. The film is directed by Debra Granik from a script adapted by Granik and Anne Rosellini.",
+                  synopsis:"Will (Ben Foster) and his teenage daughter, Tom (Thomasin Harcourt McKenzie), have lived off the grid for years in the forests of Portland, Oregon. When their idyllic life is shattered, both are put into social services.",
                   casts:'Ben Foster, Thomasin McKenzie, Jeff Kober, Dale Dickey',
                   rating:0
                 },
@@ -69,7 +68,7 @@ class App extends Component {
                   id: 8,
                   name: 'Paddington 2',
                   img:'https://resizing.flixster.com/hGcHXzBQ-nuK2EVuSRPunVBHYeg=/206x305/v1.bTsxMjY0MTAwNDtqOzE3ODMxOzEyMDA7Mjc2NDs0MDk2',
-                  synopsis:"PADDINGTON 2 finds Paddington happily settled with the Brown family in Windsor Gardens, where he has become a popular member of the community, spreading joy and marmalade wherever he goes. While searching for the perfect present for his beloved Aunt Lucy's hundredth birthday, Paddington spots a unique pop-up book in Mr. Gruber's antique shop, and embarks upon a series of odd jobs to buy it. But when the book is stolen, it's up to Paddington and the Browns to unmask the thief",
+                  synopsis:"PADDINGTON 2 finds Paddington happily settled with the Brown family in Windsor Gardens, where he has become a popular member of the community, spreading joy and marmalade wherever he goes.",
                   casts:'Hugh Grant, Ben Whishaw, Brendan Gleeson, Hugh Bonneville',
                   rating:0
                 },
@@ -105,12 +104,8 @@ handleVoting(movie){
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Ethereum</h1>
-        </header>
         <p className="App-intro">
-          Movie Rating Application with Ethereum and React
+          Movie Rating Application with Ethereum and React.Js
         </p>
         <div className="movie-table">
           <ShowMovies movies={this.state.movies} vote={this.handleVoting}/>

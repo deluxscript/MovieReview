@@ -9,35 +9,56 @@ export class ShowMovies extends Component{
 
     render(){
         let movieList=this.props.movies.map((movie,i)=>
-        <tr key={i}>
-            <td>#{movie.id}</td>
-            <td>{movie.name}</td>
-            <th><img width="100" src={movie.img}/></th>
-            <th>{movie.synopsis}</th>
-            <th>{movie.casts}</th>
-            <td>{movie.rating}</td>
-            <td>
-                <button className="btn" onClick={this.handleChange.bind(this,movie.name)}>Rate Now!</button>
-            </td>
-        </tr>)
+        // <tr key={i}>
+            <div key={i} class="cf">
+                <div class="fl w-10 tc pv3">
+                <p className="id">#{movie.id}</p>
+                </div>
+                <div class="fl w-10 tc pv3">
+                <p className="title">{movie.name}</p>
+                </div>
+                <div class="fl w-10 tc pv3">
+                <img width="100" src={movie.img}/>
+                </div>
+                <div class="fl w-30 tc pv3">
+                <p className="synopsis">{movie.synopsis}</p>
+                </div>
+                <div class="fl w-20 tc pv3">
+                <p className="casts">{movie.casts} </p>
+                </div>
+                <div class="fl w-10 tc pv3">
+                <p className="rating">{movie.rating}</p>
+                </div>
+                <div class="fl w-10 tc pv3">
+                    <button className="btn" onClick={this.handleChange.bind(this,movie.name)}>Rate Now!</button>
+                </div>
+            </div>)
 
         return(
             <div>
-            <h3> My 2018 top movies</h3>
-            <hr />
-            <table >
-                <tbody>
-                    <tr>
-                        <th>Id</th>
-                        <th>Movie Title</th>
-                        <th></th>
-                        <th>Synopsis</th>
-                        <th>Casts</th>
-                        <th>Rating</th>
-                    </tr>
-                    {movieList}
-                </tbody>
-            </table>
+            <h3 className="app-text"> My 2018 top movies</h3>
+    
+            <div class="cf">
+                <div class="fl b w-10 tc pv3 white">
+                Id
+                </div>
+                <div class="fl b w-10 tc pv3 white">
+                Movie Title
+                </div>
+                <div class="fl b w-10 tc pv3 white">
+                    3
+                </div>
+                <div class="fl b w-30 tc pv3 white">
+                Synopsis
+                </div>
+                <div class="fl b w-20 tc pv3 white">
+                Casts
+                </div>
+                <div class="fl b w-10 tc pv3 white">
+                Rating
+                </div>
+            </div>
+            {movieList}
           </div>
         )
     } 

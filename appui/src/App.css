@@ -18,8 +18,19 @@
   font-size: 1.5em;
 }
 
+.movie-table {
+  padding: 20px 50px;
+}
+
+.App-intro, .app-text {
+  font-family: Anton;
+  font-size: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 .App-intro {
-  font-size: large;
+  font-family: K2D;
 }
 
 @keyframes App-logo-spin {
